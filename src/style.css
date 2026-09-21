@@ -1439,6 +1439,28 @@ h2 {
   text-transform: uppercase;
 }
 
+.figure-head-note {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--quiet);
+  font: .65rem/1.45 'DM Mono', monospace;
+  text-align: right;
+}
+
+.figure-paper-link {
+  color: var(--signal);
+  text-decoration: underline;
+  text-decoration-color: rgba(77, 139, 255, .45);
+  text-underline-offset: .2em;
+  transition: color .2s, text-decoration-color .2s;
+}
+
+.figure-paper-link:hover,
+.figure-paper-link:focus-visible {
+  color: var(--ink);
+  text-decoration-color: var(--ink);
+}
+
 .figure-tag {
   flex: none;
   padding: .3rem .55rem;
@@ -1556,6 +1578,16 @@ h2 {
 }
 
 @media (max-width: 900px) {
+  .figure-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .figure-head-note {
+    max-width: 38rem;
+    text-align: left;
+  }
+
   .chart-duo,
   .chart-duo-stack {
     grid-template-columns: 1fr;

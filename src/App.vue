@@ -319,7 +319,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
       </nav>
 
       <div class="hero-copy page-width">
-        <p class="kicker">ICLR · 2027</p>
+        <p class="kicker">SparkDiffusion · 2027</p>
         <h1>SparkDiffusion:<br /><span>Mitigating the High-Sparsity Trap — A Unified Framework for up to 265× Single-GPU Acceleration of Visual Generation</span></h1>
         <p class="hero-lede">
           A unified post-training framework — compensated sparse attention, trajectory-mixed
@@ -395,8 +395,11 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 
       <figure class="figure-card method-figure">
         <div class="figure-head">
-          <h3>SparkDiffusion framework overview</h3>
-          <span class="figure-tag">Figure 9 · rebuilt</span>
+          <h3>SparkDiffusion framework overview(Simplified version)</h3>
+          <p class="figure-head-note">
+           For the complete framework overview, see the
+            <a class="figure-paper-link" :href="paperUrl" target="_blank" rel="noreferrer">paper ↗</a>.
+          </p>
         </div>
         <FrameworkDiagram />
         <figcaption class="figure-note">
@@ -647,4 +650,3 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
     </div>
   </main>
 </template>
-
