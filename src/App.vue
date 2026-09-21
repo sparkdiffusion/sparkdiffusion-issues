@@ -55,7 +55,7 @@ const demoSpecs: DemoModelSpec[] = [
     folder: 'Wan2.1-T2V-1.3B-480P-90',
     methods: [
       { folder: 'full_attention', label: 'Full Attention', latency: { h100: '92 s', rtx5090: '182 s' } },
-      { folder: 'turbo_diffusion', label: 'Turbo Diffusion', note: '90% sparsity · 3 Steps', latency: { h100: '1 s', rtx5090: '2 s' } },
+      { folder: 'turbo_diffusion', label: 'Turbo', note: '90% sparsity · 3 Steps', latency: { h100: '1 s', rtx5090: '2 s' } },
       { folder: 'fastwan', label: 'FastWan', note: '90% sparsity · 3 Steps', latency: { h100: '1.2 s', rtx5090: '2.8 s' } },
       { folder: 'ours', label: 'Ours', note: '90% sparsity · 3 Steps', ours: true, latency: { h100: '0.6 s', rtx5090: '1.3 s' } },
     ],
@@ -65,7 +65,7 @@ const demoSpecs: DemoModelSpec[] = [
     folder: 'Wan2.1-T2V-14B-480P-90',
     methods: [
       { folder: 'full_attention', label: 'Full Attention', latency: { h100: '460 s', rtx5090: '1674 s' } },
-      { folder: 'turbo_diffusion', label: 'Turbo Diffusion', note: '90% sparsity', latency: { h100: '6.2 s', rtx5090: '10.2 s' } },
+      { folder: 'turbo_diffusion', label: 'Turbo', note: '90% sparsity', latency: { h100: '6.2 s', rtx5090: '10.2 s' } },
       { folder: 'ours', label: 'Ours', note: '90% sparsity', ours: true, latency: { h100: '3.6 s', rtx5090: '8.3 s' } },
     ],
   },
@@ -83,7 +83,7 @@ const demoSpecs: DemoModelSpec[] = [
     folder: 'Wan2.1-T2V-720p-3steps',
     methods: [
       { folder: 'full_attention', label: 'Full Attention', latency: { h100: '1757 s', rtx5090: '4769 s' } },
-      { folder: 'turbo_diffusion', label: 'Turbo Diffusion', note: '90% · 3 steps', latency: { h100: '16 s', rtx5090: '25.3 s' } },
+      { folder: 'turbo_diffusion', label: 'Turbo', note: '90% · 3 steps', latency: { h100: '16 s', rtx5090: '25.3 s' } },
       { folder: 'fastwan', label: 'FastWan', note: '90% · 3 steps', latency: { h100: '20.5 s', rtx5090: '54.1 s' } },
       { folder: 'ours', label: 'Ours', note: '97% · 3 steps', ours: true, latency: { h100: '8 s', rtx5090: '18 s' } },
     ],
