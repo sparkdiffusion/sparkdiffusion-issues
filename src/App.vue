@@ -198,7 +198,7 @@ const heroDemo = (() => {
   }
   return null
 })()
-const paperUrl = new URL('../docs/论文.pdf', import.meta.url).href
+const paperUrl = 'https://arxiv.org/abs/2609.23153'
 
 function openVideo(demo: Demo | null) {
   if (!demo) return
@@ -215,34 +215,45 @@ function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView()
 }
 
-const citation = `@article{liu2026sparkdiffusion,
-  title   = {SparkDiffusion: Mitigating the High-Sparsity Trap --- A Unified Framework for up to 265x Single-GPU Acceleration of Visual Generation},
-  author  = {Liu, Yuxi and Li, Haoyu and Zhang, Zekun and Sun, Tengxu and Cai, Yixiang and Li, Jiayong and Xia, Yifei and Liu, Tianle and Ai, Baole and Wang, Ang and Wang, Jiamang and Qu, Lin and Zhang, Kai and Yuan, Kun and Cui, Bin},
-  journal = {Preprint},
-  year    = {2026},
-  url     = {https://sparkdiffusion.github.io/}
+const citation = `@misc{liu2026sparkdiffusionmitigatinghighsparsitytrap,
+      title={SparkDiffusion: Mitigating the High-Sparsity Trap --- A Unified Framework for up to $265\\times$ Single-GPU Acceleration of Visual Generation},
+      author={Yuxi Liu and Haoyu Li and Zekun Zhang and Tengxu Sun and Yixiang Cai and Jiayong Li and Yifei Xia and Tianle Liu and Baole Ai and Ang Wang and Jiamang Wang and Lin Qu and Kai Zhang and Kun Yuan and Bin Cui},
+      year={2026},
+      eprint={2609.23153},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.23153},
 }`
 
 // Related work from this group — same BibTeX style as the primary entry.
-const relatedWork = `@article{zhang2026rola,
-  title={RoLA: Rotary-Positioned Low-Rank Linear Attention for Efficient Diffusion Transformers},
-  author={Zhang, Zekun and Cai, Yixiang and Liu, Yuxi and Sun, Tengxu and Liu, Tianle and Wu, Zhoutong and Li, Haoyu and Ai, Baole and Wang, Ang and Wang, Jiamang and Qu, Lin and Yuan, Kun},
-  journal={arXiv preprint arXiv:2609.06712},
-  year={2026}
+const relatedWork = `@misc{zhang2026rolarotarypositionedlowranklinear,
+      title={RoLA: Rotary-Positioned Low-Rank Linear Attention for Efficient Diffusion Transformers},
+      author={Zekun Zhang and Yixiang Cai and Yuxi Liu and Tengxu Sun and Tianle Liu and Zhoutong Wu and Haoyu Li and Baole Ai and Ang Wang and Jiamang Wang and Lin Qu and Kun Yuan},
+      year={2026},
+      eprint={2609.06712},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.06712},
 }
 
-@article{liu2026ropeslr,
-  title={RoPeSLR: 3D RoPE-driven Sparse-LowRank Attention for Efficient Diffusion Transformers},
-  author={Liu, Yuxi and Zhang, Zekun and Cai, Yixiang and Deng, Renjia and He, Yutong and Yuan, Kun},
-  journal={arXiv preprint arXiv:2605.20659},
-  year={2026}
+@misc{liu2026ropeslr3dropedrivensparselowrank,
+      title={RoPeSLR: 3D RoPE-driven Sparse-LowRank Attention for Efficient Diffusion Transformers},
+      author={Yuxi Liu and Zekun Zhang and Yixiang Cai and Renjia Deng and Yutong He and Kun Yuan},
+      year={2026},
+      eprint={2605.20659},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.20659},
 }
 
-@article{liu2026crossdistill,
-  title={CrossDistill: Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation},
-  author={Liu, Yuxi and Li, Haoyu and Cai, Yixiang and Sun, Tengxu and Zhang, Zekun and Ai, Baole and Wang, Ang and Wang, Jiamang and Qu, Lin and Yuan, Kun and Zhang, Kai},
-  journal={arXiv preprint arXiv:2609.14725},
-  year={2026}
+@misc{liu2026crossdistillbalancingqualitydiversity,
+      title={CrossDistill: Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation},
+      author={Yuxi Liu and Haoyu Li and Yixiang Cai and Tengxu Sun and Zekun Zhang and Baole Ai and Ang Wang and Jiamang Wang and Lin Qu and Kun Yuan and Kai Zhang},
+      year={2026},
+      eprint={2609.14725},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.14725},
 }`
 
 async function copyBibtex(key: string, text: string) {
